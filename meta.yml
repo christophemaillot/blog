@@ -1,0 +1,20 @@
+
+blog:
+  entries:
+    - type: app
+      file: password_checker.md
+      title: "Password checker"
+      icon: "key"
+      links:
+        link:
+          title: "Online Password Checker"
+          url: "https://christophemaillot.github.io/passwordchecker"
+    - type: app
+      file: material_design_color_palette.md
+      title: "Password checker"
+      icon: "paint-brush"
+      links:
+        link:
+          title: "Online Password Checker"
+          url: "https://christophemaillot.github.io/passwordchecker"
+
