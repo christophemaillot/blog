@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Home } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + " bg-blog-100"} style={{ backgroundImage: "url('/noise.png')", backgroundRepeat: "repeat" }}>
+        <header className='text-lg text-emph1 font-bold py-2 px-4 border-b border-blog-200'><a href="/" className='flex'> <Home className='mr-4'/>  CM&apos;s blog</a></header>
+        {children}
+      </body>
     </html>
   )
 }
